@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = "8.0"
   s.name         = "SimpleChatFramework"
-  s.version      = "0.1.0"
+  s.version      = "0.0.1"
   s.summary      = "A short description of SimpleChatFramework."
 
   s.description  = <<-DESC
@@ -41,8 +41,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-    s.license = { :type => "MIT", :file => "LICENSE" }
-
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -93,9 +92,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SimpleChatFramework/**/*.{h,m,swift}"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}", "*.{swift}"
   s.exclude_files = "Classes/Exclude"
-  s.resources = "SimpleChatFramework/**/*.{png,jpeg,jpg,storyboard,xib}"
+  s.resources = "*.{png,jpeg,jpg,storyboard,xib}"
 
 
   # s.public_header_files = "Classes/**/*.h"
